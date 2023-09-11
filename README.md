@@ -30,3 +30,8 @@ We plan to utilize both training and test IRs that mirror the semantics of x86 I
 
 # Looking for teammates!
 If you are interested in my project and either have experience in compiler optimization or machine learning, please send an email to me(lukezhuz@umich.edu) with your resume attached.
+
+## Appendix
+Why using Interference graph to handle the gap between IR and machine code?
+![image](registerallocation.png "Figure2")  
+Because it captures which variables cannot be assigned to the same register simultaneously (edge) and register pressure (node degree).
